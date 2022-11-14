@@ -1,6 +1,15 @@
-import { createGetd, useGetd } from "siphon;
+import {
+  createGetd,
+  useGetd
+} from "siphon";
+import {
+  networkErrorDialog,
+  serverErrorDialog
+} from "./dialog";
 
-const Login = createGetd({
-  serErr: () => {},
-  netErr: () => {}
-});
+function Trap() {
+  const Login = useGetd({
+    serErr: serverErrorDialog,
+    netErr: networkErrorDialog
+  });
+}
