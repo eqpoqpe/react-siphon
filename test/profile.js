@@ -1,15 +1,11 @@
-import {
-  createGetd,
-  useGetd
-} from "siphon";
-import {
-  networkErrorDialog,
-  serverErrorDialog
-} from "./dialog";
+const LOGIN = createSiphon({
+  success: () => {},
+  serverFail: () => {},
+  deviceFail: () => {}
+});
 
 function Trap() {
-  const Login = useGetd({
-    serErr: serverErrorDialog,
-    netErr: networkErrorDialog
-  });
+  const submitHandle = () => {
+    LOGIN.get()
+  };
 }
