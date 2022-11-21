@@ -1,7 +1,7 @@
 {
   "name": "siphon",
   "version": "1.0.0",
-  "description": "``` +--------+ |        | <- callback | Siphon | <- params |        | data -> +--------+ ```",
+  "description": "",
   "main": "index.js",
   "type": "index.d.ts",
   "directories": {
