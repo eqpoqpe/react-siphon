@@ -2,7 +2,7 @@
 ```
 +--------+
 |        | <- callback
-| Siphon |
+| Siphon | <- params
 |        | data ->
 +--------+
 ```
