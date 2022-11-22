@@ -1,3 +1,7 @@
+// index.d.ts - siphon
+// 
+// Copyright (c) 2022 Ryan Martin.
+
 export declare type SiphonOptions = {
   success(res: any): void;
 
