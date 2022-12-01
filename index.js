@@ -1,4 +1,4 @@
-// index.js - siphon
+// index.js - react-siphon
 // 
 // Copyright (c) 2022 Ryan Martin
 
