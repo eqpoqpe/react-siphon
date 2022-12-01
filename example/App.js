@@ -1,4 +1,8 @@
-import { SiphonClient, SiphonProvider, useSiphon } from "react-siphon";
+import {
+  SiphonClient,
+  SiphonProvider,
+  useSiphon
+} from "react-siphon";
 
 const siphon = new SiphonClient();
 
