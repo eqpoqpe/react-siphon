@@ -1,8 +1,8 @@
 # Siphon
 ```
-+--------+
-|        | <- callback
-| Siphon | <- params
-|        | data ->
-+--------+
+           +--------+
+           |        |
+secrets -> | Siphon | -> secrets
+           |        |
+           +--------+
 ```
