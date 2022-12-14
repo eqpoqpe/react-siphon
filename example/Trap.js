@@ -1,5 +1,5 @@
 function Trap() {
-  const { secrets } = useSiphon({ key: "TRAP_SECRETS" });
+  const { secrets } = useSiphon({ siphonKey: "TRAP_SECRETS" });
   
   return (
     <div className="trap">
