@@ -1,8 +1,9 @@
 function Trap() {
-  const { } = useSiphon({ key: "" });
+  const { secrets } = useSiphon({ key: "TRAP_SECRETS" });
   
   return (
     <div className="trap">
+      {secrets.displayName}
     </div>
   );
 }
