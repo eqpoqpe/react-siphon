@@ -5,5 +5,5 @@
  */
 
 export {
-  type SiphonClient
+  SiphonClient
 } from "./lib/";

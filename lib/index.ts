@@ -37,5 +37,5 @@ class SiphonClient {
 }
 
 export {
-  type SiphonClient
+  SiphonClient
 };
