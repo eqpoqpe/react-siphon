@@ -1,1 +1,0 @@
-// { siphonKey: "", filter: (secrets) => {} }

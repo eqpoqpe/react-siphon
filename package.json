@@ -2,8 +2,7 @@
   "name": "siphon",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "index.d.ts",
+  "main": "index.ts",
   "directories": {
     "example": "example",
     "test": "test"
@@ -21,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/eqpoqpe/siphon/issues"
   },
-  "homepage": "https://github.com/eqpoqpe/siphon#readme"
+  "homepage": "https://github.com/eqpoqpe/siphon#readme",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26"
+  }
 }
