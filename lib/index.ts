@@ -37,5 +37,6 @@ class SiphonClient {
 }
 
 export {
-  SiphonClient
+  SiphonClient,
+  type SecretItem
 };
