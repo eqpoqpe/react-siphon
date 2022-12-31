@@ -1,8 +1,8 @@
 # Siphon
 ```
            +--------+
-           |        |
-secrets -> | Siphon | -> secrets
-           |        |
+           |        | -> secret
+secrets -> | Siphon | -> secret
+           |        | -> secret
            +--------+
 ```

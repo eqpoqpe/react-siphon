@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { SiphonContext } from "./SiphonProvider";
 import { SiphonOption } from "./SiphonResolve";
 
-function useSiphon<T>(options: SiphonOption): T | void {
+function useSiphon<T>(options: SiphonOption): T | null {
   const { secretKey } = options;
   const ctx = useContext(SiphonContext);
   var result: T;
@@ -15,6 +15,8 @@ function useSiphon<T>(options: SiphonOption): T | void {
       return (_res.$body as T);
     }
   }
+
+  return null;
 }
 
 export { useSiphon };
