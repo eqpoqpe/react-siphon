@@ -6,7 +6,7 @@ export default {
       secretKey: "HerNumber",
 
       // when call `useSiphon` we're got this body
-      body: [] as Array<MySecret>
+      body: [] as MySecret
     }
   ]
 };

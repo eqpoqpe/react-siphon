@@ -1,6 +1,7 @@
 import { useContext } from "react"
 
-function Siphon() {
+function useSiphon() {
+  // const ctx = useContext();
 }
 
-export {}
+export { useSiphon };
