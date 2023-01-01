@@ -1,7 +1,7 @@
 /**
  * index.ts - react-siphon
  * 
- * Copyright (c) 2022 Ryan Martin
+ * Copyright (c) 2022 - 2023 Ryan Martin
  */
 
 import SiphonProvider from "./lib/SiphonProvider";
