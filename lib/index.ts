@@ -5,17 +5,17 @@
  */
 
 // type SecretItem = { secretKey: string } & { [key: string]: any };
-type SecretItem = {
+type SecretItem<T> = {
   secretKey: string;
-  body?: any;
+  body?: T;
 };
 
-type SiphonConfig = { secrets: Array<SecretItem> };
+type SiphonConfig<T> = { secrets: Array<SecretItem<T>> };
 
-class SiphonClient {
+class SiphonClient<T> {
   container = new Map<string, { $body: any, $key: string }>;
 
-  constructor(config?: SiphonConfig) {
+  constructor(config?: SiphonConfig<T>) {
     if (config) {
       config.secrets.map((item) => {
         const {
