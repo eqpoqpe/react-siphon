@@ -8,7 +8,7 @@ import SiphonProvider from "./lib/SiphonProvider";
 
 export {
   SiphonClient,
-   type SecretItem
+  type SecretItem
 } from "./lib/";
 export { useSiphon } from "./lib/SiphonHook";
 export { SiphonProvider };

@@ -1,12 +1,11 @@
-import { useContext } from "react"
+import * as React from "react"
 
-import { SiphonContext } from "./SiphonProvider";
 import { SiphonOption } from "./SiphonResolve";
+import SiphonContext from "./SiphonContext";
 
 function useSiphon<T>(options: SiphonOption): T | null {
   const { secretKey } = options;
-  const ctx = useContext(SiphonContext);
-  var result: T;
+  const ctx = React.useContext(SiphonContext);
 
   if (!!ctx && !!secretKey) {
     const _res =  ctx.container.get(secretKey);

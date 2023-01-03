@@ -1,10 +1,8 @@
-import {
-  createContext,
-  createElement,
-  type PropsWithChildren
-} from "react";
+import * as React from "react";
+import { type PropsWithChildren } from "react";
 
 import { SiphonClient } from ".";
+import SiphonContext from "./SiphonContext";
 
 type SiphonProviderProps = {
 
@@ -12,19 +10,17 @@ type SiphonProviderProps = {
   client?: SiphonClient<any>;
 } & PropsWithChildren;
 
-const SiphonContext = createContext<SiphonClient<any> | null>(null);
-
 function SiphonProvider(props: SiphonProviderProps) {
   const { client, children } = props;
 
   if (!!client && client instanceof SiphonClient) {
-    return createElement(
+    return React.createElement(
       SiphonContext.Provider,
       { value: client },
       children
     );
   } else {
-    return createElement(
+    return React.createElement(
       SiphonContext.Provider,
       { value: null },
       children
