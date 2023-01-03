@@ -10,7 +10,11 @@ type SecretItem<T> = {
   body?: T;
 };
 
-type SiphonConfig<T> = { secrets: Array<SecretItem<T>> };
+type SiphonConfig<T> = {
+
+  // add secrets body type
+  secrets: Array<SecretItem<T>>
+};
 
 class SiphonClient<T> {
   container = new Map<string, { $body: any, $key: string }>;

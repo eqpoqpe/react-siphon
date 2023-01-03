@@ -9,10 +9,10 @@ import { SiphonClient } from ".";
 type SiphonProviderProps = {
 
   // default secrets config
-  client?: SiphonClient;
+  client?: SiphonClient<any>;
 } & PropsWithChildren;
 
-const SiphonContext = createContext<SiphonClient | null>(null);
+const SiphonContext = createContext<SiphonClient<any> | null>(null);
 
 function SiphonProvider(props: SiphonProviderProps) {
   const { client, children } = props;
