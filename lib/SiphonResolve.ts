@@ -21,7 +21,7 @@ type SiphonConfig<T> = {
 };
 
 class SiphonClient<T> {
-  container = new Map<string, { $body: any, $key: string }>;
+  container = new Map<string, { $body?: T, $key: string }>;
 
   constructor(config?: SiphonConfig<T>) {
     if (config) {
@@ -30,7 +30,7 @@ class SiphonClient<T> {
           secretKey,
 
           // default value
-          body = ""
+          body
         } = item;
 
         if (secretKey !== "") {
