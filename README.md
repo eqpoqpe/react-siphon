@@ -1,4 +1,11 @@
 # React Siphon
+```
+           +--------+
+           |        | -> secret
+secrets -> | siphon | -> secret
+           |        | -> secret
+           +--------+
+```
 
 ## Installation
 ```
