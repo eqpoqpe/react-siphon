@@ -1,7 +1,7 @@
 import * as React from "react";
 import { type PropsWithChildren } from "react";
 
-import { SiphonClient } from ".";
+import { SiphonClient } from "./SiphonResolve";
 import SiphonContext from "./SiphonContext";
 
 type SiphonProviderProps = {
@@ -28,5 +28,4 @@ function SiphonProvider(props: SiphonProviderProps) {
   }
 }
 
-export { SiphonContext };
-export default SiphonProvider;
+export { SiphonProvider };

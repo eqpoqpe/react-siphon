@@ -1,51 +1,30 @@
 {
   "name": "@eqpoqpe/react-siphon",
-  "version": "0.1.0",
-  "description": "",
-  "main": "build/cjs/index.js",
-  "module": "build/esm/index.js",
+  "version": "0.0.4",
+  "description": "The Easley Synchronous Secrets Config Provider.",
+  "module": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
     "build"
   ],
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
   "scripts": {
-    "test": "jest",
-    "build": "rollup -c --bundleConfigAsCjs"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -m esNext --outDir build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eqpoqpe/siphon.git"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.4.1"
   },
-  "keywords": [
-    "SiphonClient",
-    "SiphonProvider"
-  ],
-  "author": "Ryan Martin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/eqpoqpe/siphon/issues"
-  },
-  "homepage": "https://github.com/eqpoqpe/siphon#readme",
   "publishConfig": {
     "@eqpoqpe:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^24.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.2.1",
-    "@rollup/plugin-typescript": "^10.0.1",
     "@types/react": "^18.0.26",
-    "rollup": "^3.9.1",
-    "rollup-plugin-dts": "^5.1.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "tslib": "^2.4.1",
+    "@types/react-dom": "^18.0.10",
     "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "react": "^18.2.0"
   }
 }

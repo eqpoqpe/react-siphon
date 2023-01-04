@@ -1,6 +1,6 @@
-import * as React from "react";
-import { SiphonClient } from ".";
+import { createContext } from "react";
+import { SiphonClient } from "./SiphonResolve";
 
-const SiphonContext = React.createContext<SiphonClient<any> | null>(null);
+const DefaultSiphonContext = createContext<SiphonClient<any> | null>(null);
 
-export default SiphonContext;
+export default DefaultSiphonContext;

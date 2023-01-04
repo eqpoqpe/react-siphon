@@ -1,8 +1,5 @@
-# Siphon
-```
-           +--------+
-           |        | -> secret
-secrets -> | Siphon | -> secret
-           |        | -> secret
-           +--------+
-```
+# React Siphon
+
+## TODO
+- <del>ECMAScript</del>
+- CommonJS
