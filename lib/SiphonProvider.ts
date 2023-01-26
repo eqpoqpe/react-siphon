@@ -2,7 +2,7 @@ import * as React from "react";
 import { type PropsWithChildren } from "react";
 
 import { SiphonClient } from "./SiphonResolve";
-import SiphonContext from "./SiphonContext";
+import defaultSiphonContext from "./SiphonContext";
 
 type SiphonProviderProps = {
 
@@ -15,13 +15,13 @@ function SiphonProvider(props: SiphonProviderProps) {
 
   if (!!client && client instanceof SiphonClient) {
     return React.createElement(
-      SiphonContext.Provider,
+      defaultSiphonContext.Provider,
       { value: client },
       children
     );
   } else {
     return React.createElement(
-      SiphonContext.Provider,
+      defaultSiphonContext.Provider,
       { value: null },
       children
     );
